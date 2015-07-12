@@ -1,0 +1,14 @@
+name: BlockHead
+author: ItzBulkDev
+main: BlockHead\Main
+api: [1.12.1]
+version: 1.0
+commands:
+ head:
+  permission: blockheaf.command
+  description: Access to BlockHead Command
+  usage: /head <block-id>
+permissions:
+    blockhead.command:
+      default: op
+      description: Access to BlockHead Command
