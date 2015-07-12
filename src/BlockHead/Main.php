@@ -9,6 +9,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat;
 use pocketmine\item\Item;
+use pocketmine\block\Block;
 
 class Main extends PluginBase implements Listener{
 
