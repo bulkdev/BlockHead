@@ -24,7 +24,7 @@ public function onCommand(CommandSender $sender, Command $command, $label, array
 			  if($sender instanceof Player){
 			    if(count($args == 2)){
 			      $block = ($args[0]);
-			        $sender->getInventory()->setArmorBlock(0,$block);
+			        $sender->getInventory()->setHelmet(Block::get($block));
 			          }else{
 			            $sender->sendMessage(TextFormat::RED."Usage: /head <block-id>");
 			            }
