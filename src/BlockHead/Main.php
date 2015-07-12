@@ -21,16 +21,12 @@ public function onCommand(CommandSender $sender, Command $command, $label, array
   switch($command->getName()){
 			case "head":
 			  if($sender instanceof Player){
-			  if($sender->getName()->hasPermission("blockhead.command")){
 			    if(count($args == 2)){
 			      $block = ($args[0]);
 			        $sender->getInventory()->setArmorItem(0,$block);
 			          }else{
 			            $sender->sendMessage(TextFormat::RED."Usage: /head <block-id>");
 			            }
-			  }else{
-			  	$sender->sendMessage("No permissions!");
-			  }
 			            }else{
 			              return false;
 			              }
